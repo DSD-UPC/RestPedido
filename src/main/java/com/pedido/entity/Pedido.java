@@ -13,6 +13,7 @@ public class Pedido {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)	
 	private int codpedido;
+	
 	private String numcliente;
 	private int nummesa;
 	private String fechpedido;
@@ -21,13 +22,14 @@ public class Pedido {
 	private String obspersonal;
 	private String fechupdpedido;
 	private String obscliente;
-	private int codusuario;
+	private String codusuario;
 	public int getCodpedido() {
 		return codpedido;
 	}
 	public void setCodpedido(int codpedido) {
 		this.codpedido = codpedido;
 	}
+	
 	public String getNumcliente() {
 		return numcliente;
 	}
@@ -76,10 +78,10 @@ public class Pedido {
 	public void setObscliente(String obscliente) {
 		this.obscliente = obscliente;
 	}
-	public int getCodusuario() {
+	public String getCodusuario() {
 		return codusuario;
 	}
-	public void setCodusuario(int codusuario) {
+	public void setCodusuario(String codusuario) {
 		this.codusuario = codusuario;
 	}
 
